@@ -1,0 +1,10 @@
+Initial Value: 0xCAFE
+Binary: 0b1100101011111110
+True
+Swapped Value: 0xFECA
+Binary: 0b1111111011001010
+False
+Binary: 0b1110110010101111
+True
+Binary: 0b1010111111101100
+False
