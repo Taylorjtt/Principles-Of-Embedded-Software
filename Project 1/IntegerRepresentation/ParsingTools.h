@@ -1,4 +1,3 @@
 
 
-void strip(char * buffer, char * charactersToStrip);
-void removeLeadingZeros(char* buffer);
+void removeCharacter(char* string, char c);

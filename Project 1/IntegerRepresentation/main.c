@@ -4,7 +4,7 @@
     Driver for Integer Representation Code
     GCC
 */
-#define INPUT_CASE_NUMBER 12
+#define INPUT_CASE_NUMBER 11
 
 #include "IntegerRepresentation.h"
 #include "ParsingTools.h"
@@ -14,48 +14,65 @@ int main()
 
 	inputCase cases[INPUT_CASE_NUMBER];
 
-	char value[10];
-	uint8_t interCaseIndex = 0;
-	while(scanf("%s ",value) != EOF)
+	char input[10];
+
+	int32_t caseNumber = 0;
+	int32_t interCaseIndex = 0;
+
+	//parse the input file
+	while(scanf("%s",input) != EOF)
 	{
-		//printf("%s\n",value);
-		//https://www.tutorialspoint.com/c_standard_library/c_function_strtok.htm
-		char * valueToken = strtok(value,",{}");
+		/*
+			Take out all of the delimiting characters
+		*/
+		removeCharacter(input, '{');
+		removeCharacter(input, '}');
+		removeCharacter(input, ',');
+		removeCharacter(input, ' ');
 
-		uint8_t caseIndex = 0;
-			if(interCaseIndex == 0)
+		//printf("%s\n",input);
+
+		if(interCaseIndex == 0)
 		{
-			printf("Value = %d, Radix = %d, OperandSize = %d\n",cases[caseIndex].value,cases[caseIndex].radix,cases[caseIndex].operandSize);
+			cases[caseNumber].value = strtol(input,NULL,0);
+			interCaseIndex++;
 		}
-		while(valueToken != NULL)
+		else if(interCaseIndex == 1)
 		{
-			//printf("Value Token: %s\n",valueToken);
-			//printf("interCaseIndex: %d\n",interCaseIndex);
-			 if(interCaseIndex == 0)
-			 {
-			 	cases[caseIndex].value =  strtol(valueToken,NULL,0);
-				interCaseIndex = interCaseIndex + 1;
-			 }
-			 
-			else if (interCaseIndex == 1)
+			cases[caseNumber].radix = strtol(input,NULL,0);
+			interCaseIndex++;
+		}
+		else if(interCaseIndex == 2)
+		{
+			cases[caseNumber].operandSize = strtol(input,NULL,0);
+			interCaseIndex = 0;
+			caseNumber++;
+		}
+		
+	}
+
+	for(int i = 0; i < INPUT_CASE_NUMBER; i++)
+	{
+		//printf("Case # %d\tValue: %d\tRadix: %d\tOperandSize: %d\n",i,cases[i].value,cases[i].radix,cases[i].operandSize);
+		printHeader(cases[i].value,cases[i].radix,cases[i].operandSize);
+		if(isValidRadix(cases[i].radix))
+		{
+			if(isValidOperandSize(cases[i].operandSize))
 			{
-				cases[caseIndex].radix = (uint8_t)strtol(valueToken,NULL,0);
-				interCaseIndex++;
+				printTable(cases[i].value,cases[i].radix,cases[i].operandSize);
 			}
-			else if (interCaseIndex == 2)
+			else
 			{
-				cases[caseIndex].operandSize = (uint8_t)strtol(valueToken,NULL,0);
-				interCaseIndex = 0;
-				caseIndex++;
+			printf("Invalid Operand Size\n");
+			printf("\n");
 			}
 			
-			valueToken = strtok(NULL,",{}");
-
-			
 		}
-
-
-
+		else
+		{
+			printf("Invalid Radix\n");
+			printf("\n");
+		}
 	}
 
 
