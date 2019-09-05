@@ -4,7 +4,7 @@
     Driver for Integer Representation Code
     gcc -std=c99 -o  int.o main.c  ParsingTools.c IntegerRepresentation.c -Wall -Werror
 */
-#define INPUT_CASE_NUMBER 11
+#define INPUT_CASE_NUMBER (11)
 
 #include "IntegerRepresentation.h"
 #include "ParsingTools.h"
