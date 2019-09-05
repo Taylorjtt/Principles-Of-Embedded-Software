@@ -2,7 +2,7 @@
     main.c
     John Taylor
     Driver for Integer Representation Code
-    GCC
+    gcc -std=c99 -o  int.o main.c  ParsingTools.c IntegerRepresentation.c -Wall -Werror
 */
 #define INPUT_CASE_NUMBER 11
 

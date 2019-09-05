@@ -1,7 +1,7 @@
 /*
     IntegerRepresentation.h 
     John Taylor
-    GCC
+    gcc -std=c99 -o  int.o main.c  ParsingTools.c IntegerRepresentation.c -Wall -Werror
 */
 #include <stdbool.h>
 #include <stdio.h>
