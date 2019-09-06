@@ -26,6 +26,13 @@ Signed One's Compliment
 Signed Two's Compliment
 Sign-Maginitude
 
+The program has several error codes
+
+(Invalid Radix)			-> Radix != 8, 10 or 16
+(Invalid Operand Size) 	-> Operand Size != 4, 8 or 16
+(< Error)				 -> the given value is too small (too negative) to be represented with the given operand size
+(> Error)				 -> the given value is too large to be represented with the given operand size
+
 as well as the minimum and maximum for each representation given the operand size.
 
 Program 2: CharacterCodeTest
