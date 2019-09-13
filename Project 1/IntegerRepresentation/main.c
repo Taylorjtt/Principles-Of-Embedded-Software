@@ -53,7 +53,6 @@ int main()
 
 	for(int i = 0; i < INPUT_CASE_NUMBER; i++)
 	{
-		//printf("Case # %d\tValue: %d\tRadix: %d\tOperandSize: %d\n",i,cases[i].value,cases[i].radix,cases[i].operandSize);
 		printHeader(cases[i].value,cases[i].radix,cases[i].operandSize);
 		if(isValidRadix(cases[i].radix))
 		{
@@ -63,8 +62,8 @@ int main()
 			}
 			else
 			{
-			printf("Invalid Operand Size\n");
-			printf("\n");
+				printf("Invalid Operand Size\n");
+				printf("\n");
 			}
 			
 		}
