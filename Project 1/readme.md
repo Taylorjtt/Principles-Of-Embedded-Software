@@ -7,14 +7,14 @@ Student : 	John Taylor
 Assignment:	Project 1
 
 
-#Installation/Execution Notes
+# Installation/Execution Notes
 A shell script named buildAndRun.sh has been included in each program's directory
 running this script will compile and run the program. Program output is piped to 
 a file named Program(number).out, for example "Program1.out"
 
-#Program Descriptions (taken from assignment document)
+# Program Descriptions (taken from assignment document)
 
-##Program 1: Integer Representation
+## Program 1: Integer Representation
 A program that takes a numerical value, a radix and an operand size and outputs
 a table of the value's representation in the following formats
 
@@ -36,16 +36,16 @@ The program has several error codes
 
 
 
-##Program 2: CharacterCodeTest
+## Program 2: CharacterCodeTest
 A program that uses a logical expression that tests whether a given character code is a
 
-..*lower case 	(value 97-22)
-..*upper case 	(value 65-90)
-..*digit 		(value 48-57)
-..*white space 	(value 0-32 or 127)
-..*special char 	(any other value)
+..* lower case 	(value 97-22)
+..* upper case 	(value 65-90)
+..* digit 		(value 48-57)
+..* white space 	(value 0-32 or 127)
+..* special char 	(any other value)
 
-##Program 3: Bitwise Manipulation
+## Program 3: Bitwise Manipulation
 A program that given the starting integer value 0xCAFE, performs each of these operations in
 series.
 
