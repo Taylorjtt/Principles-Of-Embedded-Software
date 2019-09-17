@@ -1,10 +1,7 @@
-   ___    ____   ____        ___    ___   ____      __   ____  _____ ______       ___
-  / _ \  / __/  / __/       / _ \  / _ \ / __ \ __ / /  / __/ / ___//_  __/      <  /
- / ___/ / _/   _\ \        / ___/ / , _// /_/ // // /  / _/  / /__   / /         / / 
-/_/    /___/  /___/       /_/    /_/|_| \____/ \___/  /___/  \___/  /_/         /_/
 
-Student : 	John Taylor
-Assignment:	Project 1
+### Student : John Taylor
+
+### Assignment:	Project 1
 
 
 # Installation/Execution Notes
@@ -29,21 +26,21 @@ as well as the minimum and maximum for each representation given the operand siz
 
 The program has several error codes
 
-..*(Invalid Radix)			-> Radix != 8, 10 or 16
-..*(Invalid Operand Size) 	-> Operand Size != 4, 8 or 16
-..*(< Error)				-> the given value is too small (too negative) to be represented with the given operand size
-..*(> Error)				-> the given value is too large to be represented with the given operand size
+* **Invalid Radix**			-  Radix != 8, 10 or 16
+* **Invalid Operand Size**	-> Operand Size != 4, 8 or 16
+* **< Error**				-> the given value is too small (too negative) to be represented with the given operand size
+* **> Error **				-> the given value is too large to be represented with the given operand size
 
 
 
 ## Program 2: CharacterCodeTest
 A program that uses a logical expression that tests whether a given character code is a
 
-..* lower case 	(value 97-22)
-..* upper case 	(value 65-90)
-..* digit 		(value 48-57)
-..* white space 	(value 0-32 or 127)
-..* special char 	(any other value)
+* **lower case**	(value 97-22)
+* **upper case** 	(value 65-90)
+* **digit** 		(value 48-57)
+* **white space** 	(value 0-32 or 127)
+* **special char** 	(any other value)
 
 ## Program 3: Bitwise Manipulation
 A program that given the starting integer value 0xCAFE, performs each of these operations in
@@ -59,4 +56,5 @@ series.
 6. Test if **ANY** 3 of last 4 bits are on, and print the value in binary (along with the result of the test –
   true/false)
 7. Rotate the value by eight bits to the right, print the value in hexadecimal
-  Test if 3 of last 4
+8. Test if **ANY** 3 of last 4 bits are on, and print the value in binary (along with the result of the test - true/false
+)
