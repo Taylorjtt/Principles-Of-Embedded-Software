@@ -43,7 +43,7 @@ A program that uses a logical expression that tests whether a given character co
 * **special char** 	(any other value)
 
 ## Program 3: Bitwise Manipulation
-A program that given the starting integer value 0xCAFE, performs each of these operations in
+A program that given the starting integer value *0xCAFE*, performs each of these operations in
 series.
 
 1. Print the original input in hexadecimal
