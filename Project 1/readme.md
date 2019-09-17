@@ -1,7 +1,7 @@
-
 ### Student : John Taylor
-
 ### Assignment:	Project 1
+
+I have 2 github accounts, **altec-air** and **taylorjtt**. I didnt' realize I was committing from my work account **altec-air**. I'll try to avoid this and only commit from **taylorjtt** in the future.
 
 
 # Installation/Execution Notes
@@ -58,3 +58,4 @@ series.
 7. Rotate the value by eight bits to the right, print the value in hexadecimal
 8. Test if **ANY** 3 of last 4 bits are on, and print the value in binary (along with the result of the test - true/false
 )
+
