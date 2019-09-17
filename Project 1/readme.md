@@ -5,9 +5,9 @@ I have 2 github accounts, **altec-air** and **taylorjtt**. I didnt' realize I wa
 
 
 # Installation/Execution Notes
-A shell script named buildAndRun.sh has been included in each program's directory
+A shell script named *buildAndRun.sh* has been included in each program's directory
 running this script will compile and run the program. Program output is piped to 
-a file named Program(number).out, for example "Program1.out"
+a file named Program(number).out, for example *Program1.out*
 
 # Program Descriptions (taken from assignment document)
 
